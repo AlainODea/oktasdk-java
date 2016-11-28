@@ -177,6 +177,25 @@ public class AppInstanceApiClient extends JsonApiClient {
         return new PagedResults<AppInstance>(getAppInstancesApiResponseWithUrl(url));
     }
 
+    // USER OPERATIONS
+    /*
+    public List<User> getUsers(String appInstanceId) throws IOException {
+        return get(getEncodedPath("/%s/users", appInstanceId), new TypeReference<List<User>>() { });
+    }
+
+    public List<User> getUsersByUrl(String url) throws IOException {
+        return get(url, new TypeReference<List<User>>() { });
+    }
+
+    public void addUserToAppInstance(String appInstanceId, String userId) throws IOException {
+        put(getEncodedPath("/%s/users/%s", appInstanceId, userId));
+    }
+
+    public void removeUserFromAppInstance(String appInstanceId, String userId) throws IOException {
+        delete(getEncodedPath("/%s/users/%s", appInstanceId, userId));
+    }
+    */
+
     ////////////////////////////////////////////
     // UTILITY METHODS
     ////////////////////////////////////////////
