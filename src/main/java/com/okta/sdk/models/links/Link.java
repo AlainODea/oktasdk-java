@@ -15,7 +15,6 @@ package com.okta.sdk.models.links;
 import com.fasterxml.jackson.databind.JsonDeserializer;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
-import javax.xml.bind.annotation.XmlAnyAttribute;
 import java.util.List;
 import java.util.Map;
 
@@ -147,7 +146,6 @@ public class Link implements LinksUnion {
      * Returns the hints object.
      * @return {@link Map}
      */
-    @XmlAnyAttribute
     public Map<String, List<String>> getHints() {
         return hints;
     }
